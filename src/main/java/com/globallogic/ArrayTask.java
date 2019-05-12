@@ -6,7 +6,12 @@ public class ArrayTask {
     Example: Input array [1, 2, 8, 23, 5] Output array: [5, 23, 8, 2, 1]
      */
     public int[] reverseArray(int[] arr) {
-        return null;
+        for (int i = 0; i < arr.length / 2; i++) {
+            int tmp = arr[i];
+            arr[i] = arr[arr.length - i - 1];
+            arr[arr.length - i - 1] = tmp;
+        }
+        return arr;
     }
 
     /* Write implementation of method. The method should return sum of elements
