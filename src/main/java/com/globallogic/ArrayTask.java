@@ -8,4 +8,11 @@ public class ArrayTask {
     public int[] reverseArray(int[] arr) {
         return null;
     }
+
+    /* Write implementation of method. The method should return sum of elements
+    that placed on odd index positions (e.g. 1, 3, 5 etc.) of input array. For empty array sum will be 0
+     */
+    public int sumOfOddIndexElements(int[] arr) {
+        return 0;
+    }
 }
