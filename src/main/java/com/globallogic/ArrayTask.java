@@ -18,6 +18,12 @@ public class ArrayTask {
     that placed on odd index positions (e.g. 1, 3, 5 etc.) of input array. For empty array sum will be 0
      */
     public int sumOfOddIndexElements(int[] arr) {
-        return 0;
+        int sum = 0;
+        for (int i = 1; i < arr.length; i++) {
+            if (i % 2 != 0) {
+                sum += arr[i];
+            }
+        }
+        return sum;
     }
 }
